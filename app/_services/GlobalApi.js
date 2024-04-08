@@ -176,26 +176,6 @@ const getUserScheduleHistory = async (userEmail) => {
   const result = await request(MASTER_URL, query);
   return result;
 };
-/*const deleteBooking = async (bookingId) => {
-  console.log(bookingId);
-  const deleteQuery =
-    gql`
-  mutation deleteBooking{
-    deleteBooking(where: {id: "` +
-    bookingId +
-    `"}) {
-      email
-      time
-      userName
-    }
-  }
-  
-  `;
-
-  const result = await request(MASTER_URL, deleteQuery);
-  console.log(result);
-  return result;
-};*/
 
 export default {
   getCategory,
@@ -205,5 +185,4 @@ export default {
   createNewSchedule,
   getBookedSlot,
   getUserScheduleHistory,
-  /*deleteBooking,*/
 };

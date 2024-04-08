@@ -4,9 +4,6 @@ import { CiUser } from "react-icons/ci";
 import { FiMapPin } from "react-icons/fi";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
-/*import { Button } from '@/components/ui/button';
-import GlobalApi from '@/app/_services/GlobalApi';
-import { toast } from 'sonner';*/
 const Schedulehistory = ({ scheduleHistory }) => {
   console.log(scheduleHistory);
   const deleteBooking = (ScheduleId) => {
@@ -34,7 +31,6 @@ const Schedulehistory = ({ scheduleHistory }) => {
                   {schedule.businessList?.address}</address>
                 <h2 className='flex gap-2 text-blue-600'><FaRegCalendarAlt className='mt-1' />{`Service on: ${schedule?.date}`}</h2>
                 <h2 className='flex gap-2 text-blue-600'><FaRegClock className='mt-1' />{schedule?.time}</h2>
-                {/*<Button variant='destructive' onClick={() => deleteBooking(schedule?.id)}>Delete</Button>*/}
                 </div>
               </div>
           ))
