@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import { MdOutlineMailOutline } from "react-icons/md";
-import { FiMapPin } from "react-icons/fi";
-import { MdOutlineIosShare } from "react-icons/md";
+import { MdOutlineMailOutline } from 'react-icons/md';
+import { FiMapPin } from 'react-icons/fi';
+import { MdOutlineIosShare } from 'react-icons/md';
 import { Button } from '@/components/ui/button';
-import { CiUser } from "react-icons/ci";
-import { FaRegClock } from "react-icons/fa6";
+import { CiUser } from 'react-icons/ci';
+import { FaRegClock } from 'react-icons/fa';
 import {
   Sheet,
   SheetContent,
