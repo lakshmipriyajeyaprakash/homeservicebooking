@@ -24,9 +24,9 @@ const Header = () => {
         <div className='p-5 flex items-center gap-8'>
             <Image src='/logo.svg' alt='logo' width={40} height={50} />
             <div className='md:flex items-center gap-6 hidden'>
-                    <Link href={'/'} className='hover:scale-105 hover:text-primary cursor-auto transition-colors'>Home</Link>
-                <Link href={'/'} className='hover:scale-105 hover:text-primary cursor-auto transition-colors'>Services</Link>
-                    <Link href={'/'} className='hover:scale-105 hover:text-primary cursor-auto transition-colors'>About us</Link>
+                    <Link href={'/'} className='hover:scale-105 hover:text-primary cursor-pointer transition-colors'>Home</Link>
+                <Link href={'/find/Cleaning'} className='hover:scale-105 hover:text-primary cursor-pointer transition-colors'>Services</Link>
+                    <Link href={'/'} className='hover:scale-105 hover:text-primary cursor-pointer transition-colors'>About us</Link>
             </div>
         </div>
             <div>

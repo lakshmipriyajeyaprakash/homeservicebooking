@@ -23,17 +23,20 @@ const AboutBusiness = ({ businessDetail }) => {
       <div className='flex justify-between items-center w-full gap-10'>
       <div className='flex flex-col items-baseline mt-4 md:mt-0 items-center'>
         <h2 className='text-primary bg-blue-100 rounded-full p-1 px-2 text-lg'>{businessDetail?.category?.name}</h2>
-        <h2 className='text-[30px] font-bold'>{businessDetail?.name}</h2>
-        <h2 className='mt-1 flex gap-2 text-lg text-gray-500'>
-          <FiMapPin className='mt-2'/>{businessDetail?.address}</h2>
-          <h2 className='mt-1 flex gap-2 text-lg text-gray-500'>
-            <MdOutlineMailOutline className='mt-2' />{businessDetail?.email}</h2>
+          <h2 className='text-[30px] font-bold'>{businessDetail?.name}</h2>
+          <h2 className='flex gap-2 text-lg text-primary'><CiUser className='mt-1'></CiUser>{businessDetail.contactPerson}</h2>
+         
+        <h2 className='mt-1 flex gap-2 text-md text-gray-500'>
+          <FiMapPin className='mt-1'/>{businessDetail?.address}</h2>
+          <h2 className='mt-1 flex gap-2 text-md text-gray-500'>
+            <MdOutlineMailOutline className='mt-1' />{businessDetail?.email}</h2>
+            <h2 className='flex gap-2 text-md text-gray-500'><FaRegClock className='mt-1'></FaRegClock>Available 10.00AM to 06.30PM</h2>
         </div>
-        <div className='flex flex-col gap-5 items-end mt-4'> 
+        {/* <div className='flex flex-col gap-5 items-end mt-4'> 
           <Button><MdOutlineIosShare /></Button>
           <h2 className='flex gap-2 text-xl text-primary'><CiUser className='mt-1'></CiUser>{businessDetail.contactPerson}</h2>
           <h2 className='flex gap-2 text-xl text-gray-500'><FaRegClock className='mt-1'></FaRegClock>Available 10.00AM to 06.30PM</h2>
-        </div>
+  </div>*/}
         </div>
     </div >
   )
